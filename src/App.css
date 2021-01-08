@@ -46,3 +46,25 @@
     -webkit-transform: translateY(0);
   }
 }
+
+@keyframes moveLabel {
+  0% {
+    opacity: 0;
+    transform: translate(1.5rem, 1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(1rem, -1.5rem);
+  }
+}
+@keyframes moveLabelBack {
+  0% {
+    opacity: 1;
+    transform: translate(1rem, -1.5rem);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(1.5rem, 1rem);
+    visibility: hidden;
+  }
+}

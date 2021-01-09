@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Container } from './Shared'
 import { InfoText, Items } from '../data/FooterItems'
-import { FaCopyright, FaRegCopyright } from 'react-icons/fa'
+import { FaRegCopyright } from 'react-icons/fa'
 
 const Footer = () => {
     return (
@@ -13,7 +13,7 @@ const Footer = () => {
                     <Row>
                         <Navbar>
                             {Items.map((item, index) => (
-                                <ItemWrap>
+                                <ItemWrap key={index}>
                                     <Item key={index}>{item}</Item>
                                 </ItemWrap>
                             ))}

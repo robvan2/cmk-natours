@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Button } from './Shared'
 
-function CardRotation({ title, image, info, price, startColor, endColor }) {
+function CardRotation({ title, image, info, price, startColor, endColor, setState }) {
     return (
         <Scene>
             <ProductCard>
@@ -17,7 +17,7 @@ function CardRotation({ title, image, info, price, startColor, endColor }) {
                 <CardBack start={startColor} end={endColor} className="card__face">
                     <p>only</p>
                     <h1>${price}</h1>
-                    <Button>BOOK NOW!</Button>
+                    <Button onClick={() => setState(true)}>BOOK NOW!</Button>
                 </CardBack>
             </ProductCard>
         </Scene>

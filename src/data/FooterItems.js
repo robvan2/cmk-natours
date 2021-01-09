@@ -1,0 +1,2 @@
+export const Items = ['company', 'contact us', 'carrers', 'privacy policy', 'terms']
+export const InfoText = "This landing page was rebuilt buy me (CMK) . This is not my design I just found it on the web(i dunno the guy who design that but all design credit is his)."
